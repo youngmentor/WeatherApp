@@ -1,0 +1,152 @@
+html,
+body,
+#root {
+  font: 0.9rem sans-serif;
+  color: black;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rKfQasgUC6BI2eKwlCzg6kMiXiFKQfoqeQ&usqp=CAU");
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  outline: none;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 5%;
+  background: rgba(250, 250, 250, 0.4);
+  font-size: 20px;
+  width: 40%;
+  text-align: center;
+}
+
+.search :placeholder-shown {
+  display: none;
+  color: black;
+}
+
+.date {
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+}
+
+.city-card {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(250, 250, 250, 0.6);
+  border-radius: 10px;
+}
+
+.city {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(250, 250, 250, 0.4 ); */
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+}
+
+p {
+  text-transform: uppercase;
+}
+
+.city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1e2432;
+  text-align: center;
+}
+
+.city sup {
+  font-size: 0.5em;
+}
+
+.city-name {
+  font-size: 2em;
+}
+
+.city-name sup {
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em;
+  border-radius: 30px;
+  color: #fff;
+  background: #ff8c00;
+}
+
+.city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info p {
+  font-size: 15px;
+  font-weight: 1000;
+}
+
+.weather-details {
+  width: 45%;
+  margin-top: 20px;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.weather-p {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 1000;
+}
+
+@media screen and (max-width: 426px) {
+  .city-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .city,
+  .weather-details {
+    width: 100%;
+    box-shadow: none;
+    background: rgba(250, 250, 250, 0.4);
+  }
+
+  .search {
+    width: 70%;
+  }
+
+}
